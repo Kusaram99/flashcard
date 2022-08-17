@@ -1,0 +1,16 @@
+{
+  "files": {
+    "main.css": "/flashcard/static/css/main.fda552a2.css",
+    "main.js": "/flashcard/static/js/main.41d272cc.js",
+    "static/js/787.5ee9dda9.chunk.js": "/flashcard/static/js/787.5ee9dda9.chunk.js",
+    "static/media/card_img.jpg": "/flashcard/static/media/card_img.22c8286f79924c5bfa8e.jpg",
+    "index.html": "/flashcard/index.html",
+    "main.fda552a2.css.map": "/flashcard/static/css/main.fda552a2.css.map",
+    "main.41d272cc.js.map": "/flashcard/static/js/main.41d272cc.js.map",
+    "787.5ee9dda9.chunk.js.map": "/flashcard/static/js/787.5ee9dda9.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.fda552a2.css",
+    "static/js/main.41d272cc.js"
+  ]
+}
