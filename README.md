@@ -1,3 +1,31 @@
+# Almabetter Project
+
+## Technology:-
+1. React.js
+2. Formik library
+3. React-Router-Dom
+4. Redux Thunk
+
+## 1. React.js
+- In This application there is ## `3 pages`  ### 1) `generate cards`, ### 2) `show cards`, ### 3) `See details of cards`,
+- In this project we have used React.js This application purpose is to make a flash card generator, 
+  There is no limit for make notes as well as we used localstorage for save current card when user reload page during the adding notes that time notes will save in localstorage.
+  
+## 2. Formik Library
+- Formik is login page error handling library, So we used Formik library while generating card 
+
+## 3. React-Router-Dom
+- It helps for navigating one page to another page
+
+## 4. Redux Thunk 
+- It is a middleware works Asyncronous and It helps to work state update 
+  
+
+
+
+
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
