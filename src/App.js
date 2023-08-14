@@ -14,13 +14,13 @@ function App() {
 
   const flashstate = useSelector(state => state.Reducer.showNum)
   return (
-    <BrowserRouter>
+    <BrowserRouter basename="/">
       <div className="h-screen">
         <Navbar />
         <div className='px-0 lg:px-40 sm:px-8'>
           <Heading />
-          <Routes>
-            <Route path="/" element={<CreateG2 />} />
+          <Routes >
+            <Route exact path="/" element={<CreateG2 />} />
             <Route path="/flashcardgroup" element={<FlashCardGroup />} />
             <Route path={`/flashCard${flashstate}`} element={<FlashCards />} />
           </Routes>

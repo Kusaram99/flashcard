@@ -1,6 +1,5 @@
 import React, { useState } from 'react'
-import { BsArrowLeft, BsShare, BsDownload, BsPrinter } from 'react-icons/bs'
-import laptop_img from './images/card_img.jpg'
+import { BsArrowLeft, BsShare, BsDownload, BsPrinter } from 'react-icons/bs' 
 import { Link } from 'react-router-dom'
 import { useSelector } from 'react-redux/es/exports'
 import { BiCopy } from 'react-icons/bi'
@@ -52,11 +51,7 @@ const FlashCards = () => {
         <div className='mb-12'>
             {/* ----------------- flash cards maincontainer ------------------- */}
             {state.groupData.map((elem, index) => {
-
-
                 return (index === state.showNum ?
-
-
                     <div key={index}>
                         {/* ---- Heading maincontainer */}
                         <div>
@@ -70,12 +65,12 @@ const FlashCards = () => {
                         </div>
                         {/* -------- carousel main container-------- */}
                         <div
-                            className='flex flex-col items-center justify-center lg:items-start my-11 lg:flex-row lg:justify-between sm:items-center sm:justify-center sm:flex-col mb-14'>
+                            className='flex flex-col items-center justify-center gap-3 lg:items-start my-11 lg:flex-row lg:justify-between sm:items-center sm:justify-center sm:flex-col mb-14'>
                             {/* ------ cards list */}
                             <div
                                 className='w-full bg-white rounded-md px-2 shadow-lg lg:w-1/5 sm:w-full '>
                                 <p className='text-sm px-5 py-2 text-gray-300'>Flashcards</p>
-                                <hr className='bg-gray-300' style={{height:'1px'}}/>
+                                <hr className='bg-gray-300' style={{ height: '1px' }} />
                                 <h3 className='font-extrabold px-5 py-2 text-red-500'>Cards list</h3>
                                 <ul>
                                     {elem.state.map((childElement, childIndex) => {
@@ -102,13 +97,9 @@ const FlashCards = () => {
                                         cardHandler === childIndex ?
                                             <div
                                                 key={childIndex}
-                                                className='w-full flex flex-col justify-between px-5 py-9 sm:flex-col lg:flex-row bg-white rounded-md shadow-lg'>
+                                                className='w-full flex justify-center px-5 py-9 lg:flex-row bg-white rounded-md shadow-lg'> 
                                                 <div
-                                                    className='w-2/4 max-h-96 lg:w-2/4 lg:max-h-96  sm:w-full sm:max-w-lg'>
-                                                    <img className='inline-block w-full' src={laptop_img} alt='carousel_img' />
-                                                </div>
-                                                <div
-                                                    className='w-full text-justify sm:mt-6 lg:mt-0 sm:w-full lg:w-2/5'>
+                                                    className='w-full text-justify sm:mt-6 lg:mt-0'>
                                                     <p>{childElement.defination}</p>
                                                 </div>
                                             </div>

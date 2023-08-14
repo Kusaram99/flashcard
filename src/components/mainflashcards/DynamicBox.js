@@ -1,5 +1,5 @@
 import React from 'react'
-import { AiOutlineEdit, AiOutlineDelete } from 'react-icons/ai'
+import { AiOutlineDelete } from 'react-icons/ai'
 import { deleteInputBox } from '../../redux/action/Action';
 import { useDispatch, useSelector } from 'react-redux';
 
@@ -55,12 +55,7 @@ const DynamicBox = () => {
                                 className='py-4 px-5 outline outline-2 rounded outline-blue-100' >
                             </textarea>
                         </div>
-                        <div className='flex justify-end items-end sm:mt-0 mt-2'>
-                            <button
-                                className="px-5 text-2xl py-2 text-blue-700 rounded-md mr-2"
-                            >
-                                <AiOutlineEdit />
-                            </button>
+                        <div className='flex justify-end items-end sm:mt-0 mt-2'> 
                             <button
                                 className="px-5 py-2 rounded text-2xl text-red-700"
                                 onClick={() => dispatch(deleteInputBox(index))}><AiOutlineDelete />
