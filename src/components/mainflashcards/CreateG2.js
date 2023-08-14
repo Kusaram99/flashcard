@@ -37,16 +37,16 @@ const CreateG2 = () => {
   const validate = values => {
     let errors = {};
     if (values.groupName.length < 3) {
-      errors.groupName = 'Please add minimum 3 characters'
+      errors.groupName = 'required'
     }
     if (values.description.length < 15) {
-      errors.description = 'Please add minimum 5 words'
+      errors.description = 'Please add more than 5 words'
     }
     if (values.term.length < 3) {
-      errors.term = "Please add minimum 3 characters"
+      errors.term = "required"
     }
     if (values.defination.length < 12) {
-      errors.defination = "Please add minimum 5+ words "
+      errors.defination = "Please add more than 5 words "
     }
     return errors
   }
