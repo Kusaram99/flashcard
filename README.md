@@ -1,6 +1,6 @@
 # Almabetter Project
 
-Demo: https://rampawara99.github.io/flashcard/
+Demo Link: https://flashcard-six.vercel.app/
 
 ## Technology:-
 1. React.js
